@@ -12,8 +12,8 @@ try :
     element = WebDriverWait(driver, 25).until (
     EC.presence_of_element_located((By.NAME, "username")))
     
-    driver.find_element(By.NAME, "username").send_keys("esyeer42")
-    driver.find_element(By.XPATH, "//*[@id='loginForm']/div/div[2]/div/label/input").send_keys("Esyeer.29")
+    driver.find_element(By.NAME, "username").send_keys("myUserName")
+    driver.find_element(By.XPATH, "//*[@id='loginForm']/div/div[2]/div/label/input").send_keys("myPass")
     driver.find_element(By.XPATH, "//*[@id='loginForm']/div/div[3]/button").click()
     time.sleep(5)
 
